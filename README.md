@@ -47,8 +47,9 @@ We chose a high-performance stack optimized for edge computing and real-time inf
 
 ## ⚙️ Architecture
 
+```mermaid
 graph LR
-    A[Helmet Camera / Android Phone] -- WiFi Stream --> B(Compute Node / Laptop);
+    A[Helmet Camera  Android Phone] -- WiFi Stream --> B(Compute Node \n Laptop/Jetson);
     B -- YOLOv11 --> C{Violation Check};
     C -- Yes --> D[Trigger Audio Alert];
     C -- Yes --> E[Save Evidence];
